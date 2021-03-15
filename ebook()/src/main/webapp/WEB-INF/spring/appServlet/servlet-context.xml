@@ -23,12 +23,13 @@
 	
 	<context:component-scan base-package="com.a.b" />
 	
-	<beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
+<!--	<beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
 		<beans:property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
 		<beans:property name="url" value="jdbc:oracle:thin:@192.168.0.230:1521:xe" />
 		<beans:property name="username" value="ebook" />
 		<beans:property name="password" value="ebook" />
 	</beans:bean>
+	-->
 	
 		<beans:bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<beans:property name="dataSource" ref="dataSource"></beans:property>

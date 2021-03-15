@@ -1,7 +1,21 @@
 package com.a.b.dto;
 
+import org.springframework.stereotype.Component;
+
 public class Ebook {
 	
+	
+	
+	
+	
+	
+@Override
+	public String toString() {
+		return "Ebook [bBookno=" + bBookno + ", bBookname=" + bBookname + ", bContent=" + bContent + ", bPrice="
+				+ bPrice + ", bWriter=" + bWriter + ", bPublisher=" + bPublisher + ", bCategory=" + bCategory + "]";
+	}
+
+
 	private long bBookno;
 	private String bBookname;
 	private String bContent;
@@ -9,6 +23,7 @@ public class Ebook {
 	private String bWriter;
 	private String bPublisher;
 	private String bCategory;
+	
 	
 	public Ebook() {}
 

@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.a.b.service.IBoarderService;
 import com.a.b.service.LoginService;
 import com.a.b.service.MModifyService;
+import com.a.b.service.BListService;
 import com.a.b.service.Constant;
 import com.a.b.dao.MDao;
 import com.a.b.dto.Member;
@@ -156,5 +157,22 @@ public class HomeController {
 		model.addAttribute("locale", locale);
 		return "./admin/adminpage";
 	}
+	
+	
+	@RequestMapping("/BookList")
+	public String BookList(Model model) {
+		service = new BListService();
+		service.execute(model);
+		return "book/BookList";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
