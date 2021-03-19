@@ -96,7 +96,7 @@
 	<delete id="ebookRentalOverListDelete"> <!-- 날짜지난거만삭제 -->
 		delete FROM RENTALINGLIST 
 		WHERE SYSDATE > BRETURNDATE
-		AND bId = #{param1}
+		AND bId = #{param1} <!-- . .. . . -->
 	</delete>
 	
 	<select id="namesearch" resultType="com.a.b.dto.Ebook">
